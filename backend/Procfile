@@ -1,0 +1,1 @@
+web: gunicorn Sos_Final_Docta.wsgi --log-file -
