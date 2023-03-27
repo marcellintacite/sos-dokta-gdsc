@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/ShaanCoding/ReadME-Generator">
+  <a href="https://github.com/GDSC-UCB">
     <img src="https://pbs.twimg.com/profile_images/1471160684515934211/lnesC4fd_400x400.jpg" alt="Logo" width="80" height="80">
   </a>
 
@@ -13,11 +13,11 @@
     <a href="https://github.com/ShaanCoding/ReadME-Generator"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/ShaanCoding/ReadME-Generator">View Demo</a>
+    <a href="https://sosdokta.app/">View Demo</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Report Bug</a>
+    <a href="https://github.com/GDSC-UCB">Report Bug</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Request Feature</a>
+    <a href="https://github.com/GDSC-UCB">Request Feature</a>
   </p>
 </p>
 
