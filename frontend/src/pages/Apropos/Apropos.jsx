@@ -13,28 +13,18 @@ export default function Apropos() {
       <div className="content">
         <h3>Communauté</h3>
         <p>
-          Le Lorem Ipsum est simplement du faux texte employé dans la
-          composition et la mise en page avant impression. Le Lorem Ipsum est le
-          faux texte standard de l'imprimerie depuis les années 1500, quand un
-          imprimeur anonyme assembla ensemble des morceaux de texte pour
-          réaliser un livre spécimen de polices de texte. Il n'a pas fait que
-          survivre cinq siècles, mais s'est aussi adapté à la bureautique
-          informatique, sans que son contenu n'en soit modifié. Il a été
-          popularisé dans les années 1960 grâce à la vente de feuilles Letraset
-          contenant des passages du Lorem Ipsum, et, plus récemment, par son
-          inclusion dans des applications de mise en page de.
+          C'est quoi le GDSC ? GDSC en sigle veut dire " Google Developper
+          Student Clubs" qu'en signifiant en français " Clubs Étudiants des
+          Développeurs Google". Le GDSC est l'organisation de développeur qui
+          œuvre dans le but d'assurer la compréhension de l'enseignement
+          informatique à leur défense des intérêts inclusifs dans une
+          communauté.
         </p>
         <p>
-          Le Lorem Ipsum est simplement du faux texte employé dans la
-          composition et la mise en page avant impression. Le Lorem Ipsum est le
-          faux texte standard de l'imprimerie depuis les années 1500, quand un
-          imprimeur anonyme assembla ensemble des morceaux de texte pour
-          réaliser un livre spécimen de polices de texte. Il n'a pas fait que
-          survivre cinq siècles, mais s'est aussi adapté à la bureautique
-          informatique, sans que son contenu n'en soit modifié. Il a été
-          popularisé dans les années 1960 grâce à la vente de feuilles Letraset
-          contenant des passages du Lorem Ipsum, et, plus récemment, par son
-          inclusion dans des applications de mise en page de.
+          La communauté GDSC, a comme objectif de fédérer des communes au sein
+          d'un espace de solidarité en mutualisant l'explicité de collaboration
+          selon leurs moyens, afin d'élaborer et de mettre en œuvres des projets
+          des développements communs et cohérents.
         </p>
         <p>
           Le Lorem Ipsum est simplement du faux texte employé dans la

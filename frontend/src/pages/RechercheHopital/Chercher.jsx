@@ -7,7 +7,7 @@ import CardHopital from "./componets/CardHopital";
 const Chercher = () => {
   const [query, setQuery] = React.useState("");
   const [data, setData] = useState(Hopitaux);
-  const[ApiData,setApiData]=useState([])
+  const [ApiData, setApiData] = useState([]);
 
   const SearchListe = (e) => {
     setQuery(e.target.value.toLowerCase());
@@ -24,17 +24,10 @@ const Chercher = () => {
   };
 
   useEffect(() => {
-    if (query === "") {
-      setData(Hopitaux);
-    }
-
-  });
-
-  useEffect(() => {
- 
-      axios.get(`https://apigsdc.herokuapp.com/tousleshopitaux/`).then((res) => {
-       
-        setApiData(res.data)
+    axios
+      .get(`https://apigsdc.herokuapp.com/tousleshopitaux/`)
+      .then((res) => {
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);

@@ -37,7 +37,10 @@ export default function Accueil() {
         </div>
         <div className="ContainerLeft">
           <h2>
-            <span>SOS Doctor</span>, votre <br /> docteur de poche
+            <span>
+              <span className="red">SOS</span> Doctor
+            </span>
+            , votre <br /> assistant médical de poche
           </h2>
           <p>
             Besoin d'orientation et info sur votre santé et structure sanitaire
@@ -151,6 +154,9 @@ const StyledAccueil = styled.nav`
       font-weight: 600;
       span {
         color: #39c3f6;
+        .red {
+          color: #ae376d;
+        }
       }
       @media (max-width: 768px) {
         font-weight: 600;
@@ -167,6 +173,7 @@ const StyledAccueil = styled.nav`
       font-size: 16px;
       line-height: 24px;
       text-align: center;
+      z-index: 1000;
     }
 
     .img {
@@ -176,7 +183,7 @@ const StyledAccueil = styled.nav`
       left: 75px;
       border-radius: 50%;
       margin-top: 140px;
-      top: 521px;
+
       background: #ae376d;
 
       img {
@@ -184,7 +191,14 @@ const StyledAccueil = styled.nav`
         width: 778.54px;
         height: 490.19px;
         left: -56px;
-        top: 340px;
+        top: 370px;
+        @media (max-width: 1500px) {
+          width: 580px;
+        }
+        @media (max-width: 900px) {
+          width: 500px;
+          display: none;
+        }
       }
       @media (max-width: 768px) {
         display: none;
