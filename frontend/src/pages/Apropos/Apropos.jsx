@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Slider from "./slider";
 import Footer from "../../components/Footer";
 
+import SliderComponent from "./slider";
+
 export default function Apropos() {
   return (
     <AproposStyled bg={i}>
@@ -40,7 +42,7 @@ export default function Apropos() {
         </p>
       </div>
       <div className="slide_container">
-        <Slider />
+        <SliderComponent />
       </div>
       <Footer />
     </AproposStyled>
@@ -92,5 +94,6 @@ const AproposStyled = styled.div`
     width: 80%;
     margin: auto;
     padding: 10px 0;
+    margin-bottom: 50px;
   }
 `;

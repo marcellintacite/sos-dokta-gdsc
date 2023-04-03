@@ -1,24 +1,11 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/swiper.min.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import img1 from "./assets/e.jpg";
 import img2 from "./assets/PXL_20230128_122548192.jpg";
 import img3 from "./assets/PXL_20230128_131948658.PORTRAIT.jpg";
 import img4 from "./assets/PXL_20230204_123722959.jpg";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import "swiper/css/autoplay";
 import styled from "styled-components";
-
-const captions = [
-  "Caption 1",
-  "Caption 2",
-  "Caption 3",
-  "Caption 3",
-  "Caption 3",
-];
 
 const data = [
   {
@@ -43,65 +30,64 @@ const data = [
   },
 ];
 
-const Slider = () => {
+const SliderComponent = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
-    <div className="slider">
-      <Swiper
-        spaceBetween={10}
-        slidesPerView={1}
-        navigation
-        autoplay={{
-          delay: 4000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        }}
-        loop
-        modules={[Navigation, Pagination, A11y, Autoplay]}
-        allowSlideNext
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-      >
-        {data.map((carte, index) => (
-          <SwiperSlide key={index}>
-            <CardRender className="slide">
-              <img
-                src={carte.img}
-                alt={`Slide ${index}`}
-                className="img_carte"
-              />
-              <div className="caption">
-                <p>{carte.description}</p>
-              </div>
-            </CardRender>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Slider {...settings}>
+      {data.map((carte, index) => (
+        <CardRender className="slide" key={index}>
+          <img src={carte.img} alt={`Slide ${index}`} className="img_carte" />
+        </CardRender>
+      ))}
+    </Slider>
   );
 };
 
-export default Slider;
+export default SliderComponent;
 
 const CardRender = styled.div`
   width: 100%;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  padding: 10px;
 
   img {
     width: 100%;
     border-radius: 15px;
-  }
-  .caption {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(360deg, #0007, #0007);
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 16px;
   }
 `;
