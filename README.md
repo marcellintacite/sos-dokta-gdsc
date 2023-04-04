@@ -7,7 +7,8 @@
   <h3 align="center">SOS DOKTA</h3>
 
   <p align="center">
-    Sos Dokta is an amazing app that helps people in our town get access to health information that can save lives. With this app, you can easily find the emergency number, nearby hospital, first aid, sexual education, and more. This is a centralized repo , find everything about contributions <a href="https://github.com/GDSC-UCB">here </a>
+    Sos Dokta is an amazing app that helps people in our town get access to health information that can save lives. With this app, you can easily find the emergency number, nearby hospital, first aid, sexual education, and more. This is a centralized repo , find everything about contributions <a href="https://github.com/GDSC-UCB">here </a> 
+  <p>The app is in french</p>
     <br/>
     <br/>
     <a href="https://github.com/ShaanCoding/ReadME-Generator"><strong>Explore the docs »</strong></a>
